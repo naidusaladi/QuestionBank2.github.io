@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestionBank</title>
+</head>
+<style>
+  fieldset{
+    border: 4px solid black;
+  }
+  legend{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    letter-spacing: 2px;
+  }
+  span{
+    font-weight: 800;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  b{
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  summary>div{
+    letter-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+  button{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-weight: 800;
+    padding: 4px;
+    transition: 500ms all ease;
+    cursor: pointer;
+    
+  }
+  button:hover{
+    background-color: rgb(20, 20, 20);
+    color:white
+  }
+  hr{
+    
+    height: 3px;
+    background-color: black;
+  }
+  dialog{
+    width: 500px;
+    height: 600px;
+    overflow-x: hidden;
+    
+  }
+  .close{
+    position: absolute;
+    top:5px;
+    right:20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+}
+
+.python{
+    height: 87%;
+    width: 90%;
+    opacity:1;
+    background-color:orange;
+    position: absolute;
+    transition: 1s opacity ease;
+
+    margin:2px
+
+    
+  }
+
+.javascript
+  {
+    height: 87%;
+    width: 90%;
+
+    opacity:1;
+    background-color:skyblue;
+    position: absolute;
+    transition: 1s opacity ease;
+    margin-left: -100px;
+    margin:2px;
+    overflow-x: hidden;
+    
+
+    
+  }
+  .btn-js{
+    background-color: black;
+    color: white;
+  }
+
+
+</style>
+<body>
+    <fieldset>
+        <legend>ArrayQuestions</legend>
+        <div class="container">
+
+
+
+
+            <!-- Question1 -->
+            <details>
+                <summary >
+                    <span><b>Question1:</b> Given an array , find the length of an array with out using length function.</span>
+                    <br/><br/>
+                    <div>
+                        <div><b>Example1:</b></div>
+                        <div>input: arr = [ 1 , 2 , 3 , 4 ]</div>
+                        <div>output: 4</div>
+                    </div>
+                     <br/>
+                    <div>
+                        <div><b>Example2:</b></div>
+                        <div>input: arr = []</div>
+                        <div>output: 0</div>
+                    </div>
+                    <br/>
+                </summary>                
+                <button class="open">Click Here For Solution</button>
+                <dialog  class="modal" >
+                    <div><b>Code</b></div>
+                    <button class="close">X</button>
+                    <button class="btn-js">Javascript</button>
+                    <button class="btn-py">Python</button>
+                    
+                    <div class="python">
+                        <pre>
+<code>
+  <b>
+  arr=[1,2,3,4,5,6,7,8,9]
+  i=0
+  while(True):
+      try:
+          if(arr[i]):
+              i+=1
+              continue
+      except:
+          print(i)
+          break
+  </b>
+</code>
+                        </pre>
+                    </div>
+                    <div class="javascript">
+                      <pre>
+<code>
+  <b>
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  while (true) {
+    
+      if (arr[i] == undefined) {
+            print(i)
+          break
+      } i++
+  }
+</b>
+</code>
+
+                      </pre>
+                         
+                    </div>
+                    
+                </dialog>
+            </details>
+            <hr>
+            <!-- Question2 -->
+            <details>
+                <summary>
+                    <span><b>Question2:</b> Given an array , print each elements of an array in new line.</span>
+                    <br/><br/>
+                    <div>
+                        <div><b>Example1:</b></div>
+                        <div>input: arr = [ 4 , 6 , 5 , 7 , 8 ]</div>
+                        <div>output:<br>
+                            4<br>
+                            6<br>
+                            5<br>
+                            7<br>
+                            8<br>
+
+                        </div>
+                    </div>
+                     <br/>
+                    <div>
+                        <div><b>Example2:</b></div>
+                        <div>input: arr = [ ' a ' , ' b ' , ' c ']</div>
+                        <div>output:<br>
+                            ' a '<br>
+                            ' b '<br>
+                            ' c '<br>
+                        </div>
+                    </div>
+                    <br/>
+                </summary>                
+                <button class="open">Click Here For Solution</button>
+                <dialog  class="modal" >
+                    <div><b>Code</b></div>
+                    <button class="close">X</button>
+                    <button class="btn-js">Javascript</button>
+                    <button class="btn-py">Python</button>
+                    
+                    <div class="python">
+<pre>
+ <code>
+<b>
+ arr=[2,4,6,8,9,1]
+ i=0
+ for i in range(len(arr)):
+     print(arr[i])
+</b>
+ </code>
+</pre>
+                    </div>
+                    <div class="javascript">
+<pre>
+<code>
+<b>
+ let arr=[2,4,6,8,9,1]
+
+ for(let i=0;i&lt;arr.length;i++){
+     console.log(arr[i])
+ }
+</b>
+</code>
+</pre>
+                    </div>
+                    
+                </dialog>
+            </details>
+            <hr>
+            <!-- Question3 -->
+            <details>
+                <summary>
+                    <span><b>Question3:</b> Given an array , print each elements of an array in reverse order.</span>
+                    <br/><br/>
+                    <div>
+                        <div><b>Example1:</b></div>
+                        <div>input: arr = [ 4 , 6 , 5 , 7 , 8 ]</div>
+                        <div>output:<br>
+                            8<br>
+                            7<br>
+                            5<br>
+                            6<br>
+                            4<br>
+
+                        </div>
+                    </div>
+                     <br/>
+                    <div>
+                        <div><b>Example2:</b></div>
+                        <div>input: arr=[ ' a ', ' b ' , ' c ']</div>
+                        <div>output:<br>
+                            ' c '<br>
+                            ' b '<br>
+                            ' a '<br>
+                        </div>
+                    </div>
+                    <br/>
+                </summary>                
+                <button class="open">Click Here For Solution</button>
+                <dialog  class="modal" >
+                    <div><b>Code</b></div>
+                    <button class="close">X</button>
+                    <button class="btn-js">Javascript</button>
+                    <button class="btn-py">Python</button>
+                    
+                    <div class="python">
+<pre>
+<code>
+<b>
+ arr=[3,4,5,6,7,8,9]
+ i=0
+ for i in range(len(arr)-1,-1,-1):
+     print(arr[i])
+</b>
+</code>
+</pre>
+                    </div>
+                    <div class="javascript">
+<pre>
+<code>
+<b>
+ let arr=[3,4,5,6,7,8,9]
+
+ for(let i=arr.length-1;i&gt;-1;i--){
+     console.log(arr[i])
+ }
+</b>
+</code>
+</pre>
+                    </div>
+                    
+                </dialog>
+            </details>
+            <hr>
+            <!-- Question4 -->
+            <details>
+                <summary>
+                    <span><b>Question4:</b> Given an array print last element of an array.</span>
+                    <br/><br/>
+                    <div>
+                        <div><b>Example1:</b></div>
+                        <div>input: arr=[ 4 , 6 , 5 , 7 , 8]</div>
+                        <div>output: 8<br>
+                        </div>
+                    </div>
+                     <br/>
+                    <div>
+                        <div><b>Example2:</b></div>
+                        <div>input: arr=[ ' a ' , ' b ' , ' c ']</div>
+                        <div>output: ' c '<br>
+                        </div>
+                    </div>
+                    <br/>
+                </summary>                
+                <button class="open">Click Here For Solution.</button>
+                <dialog  class="modal" >
+                    <div><b>Code</b></div>
+                    <button class="close">X</button>
+                    <button class="btn-js">Javascript</button>
+                    <button class="btn-py">Python</button>
+                    
+                    <div class="python">
+<pre>
+<code>
+<b>
+ arr=[3,4,5,6,7,8,9,12,15,34,35,4]
+ print(arr[-1])
+</b>
+</code>
+</pre>
+                    </div>
+                    <div class="javascript">
+<pre>
+<code>
+<b>
+ arr=[3,4,5,6,7,8,9,12,15,34,35,4]
+ print(arr[-1])
+</b>
+</code>
+</pre>
+                    </div>
+                    
+                </dialog>
+            </details>
+            <hr>
+            <!-- Question5 -->
+            <details>
+                <summary>
+                    <span><b>Question5:</b> Given an array print first even number in array.</span>
+                    <br/><br/>
+                    <div>
+                        <div><b>Example1:</b></div>
+                        <div>input: arr=[ 1 , 3 , 6 , 5 , 7 , 8 ]</div>
+                        <div>output: 6<br>
+                        </div>
+                    </div>
+                     <br/>
+                    <div>
+                        <div><b>Example2:</b></div>
+                        <div>input: arr = [ 1 , 5 , 9 , 11 , 15]</div>
+                        <div>output: -1<br>
+                        </div>
+                    </div>
+                    <br/>
+                </summary>                
+                <button class="open">Click Here For Solution</button>
+                <dialog  class="modal" >
+                    <div><b>Code</b></div>
+                    <button class="close">X</button>
+                    <button class="btn-js">Javascript</button>
+                    <button class="btn-py">Python</button>
+                    
+                    <div class="python">
+<pre>
+<code>
+<b>
+ arr=[1,3,5,4,6,7,8,9]
+ flag=-1
+ for i in range(len(arr)):
+     if(arr[i]%2==0):
+         print(arr[i])
+         flag=1
+         break
+ if(flag==-1):
+    print(-1)
+</b>
+</code>
+</pre>
+                    </div>
+                    <div class="javascript">
+<pre>
+<code>
+<b>
+ let arr=[1,3,5,4,6,7,8,9]
+ let flag=-1
+ for(let i=0;i&lt;arr.length;i++){
+     if(arr[i]%2==0){
+         console.log(arr[i])
+         flag=1
+         break
+     }
+ }
+ if(flag==-1){
+     console.log(-1)
+ }
+</b>
+</code>
+</pre>
+                    </div>
+                    
+                </dialog>
+            </details>
+            <hr>
+            
+
+
+
+
+        </div>
+    </fieldset>
+    <script>
+        const opens= document.querySelectorAll('.open')
+        const closes= document.querySelectorAll('.close')
+        const  modals=document.querySelectorAll('.modal')
+        const  btns_py=document.querySelectorAll('.btn-py')
+        const  btns_js=document.querySelectorAll('.btn-js')
+        const  pythons=document.querySelectorAll('.python')
+        const  javascripts=document.querySelectorAll('.javascript')
+
+        opens.forEach((open,index)=>{
+            open.addEventListener('click',()=>{
+                modals.forEach((modal,mindex)=>{
+                    if(mindex==index)
+                    {
+                        modal.showModal()
+                    }
+                    else{
+                        modal.close()
+                    }
+                })
+           
+            })
+        
+        })
+        closes.forEach((close,index)=>{
+            close.addEventListener('click',()=>{
+                modals.forEach((modal,mindex)=>{
+                    modal.close()
+
+                })
+           
+            })
+        
+        })
+        
+        btns_py.forEach((btn_py,index)=>{
+            btn_py.addEventListener('click',()=>{
+            javascripts[index].style.opacity=0
+            pythons[index].style.opacity=1
+            btns_py[index].style.backgroundColor="black"
+            btns_py[index].style.color="white"
+            btns_js[index].style.backgroundColor="white"
+            btns_js[index].style.color="black"
+        })
+
+        })
+        btns_js.forEach((btn_js,index)=>{
+            btn_js.addEventListener('click',()=>{
+            javascripts[index].style.opacity=1
+            pythons[index].style.opacity=0
+            btns_js[index].style.backgroundColor="black"
+            btns_js[index].style.color="white"
+            btns_py[index].style.backgroundColor="white"
+            btns_py[index].style.color="black"
+        })
+
+        })
+
+
+    </script>
+</body>
+</html>
